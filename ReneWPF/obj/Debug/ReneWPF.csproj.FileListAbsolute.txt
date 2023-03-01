@@ -12,3 +12,12 @@ D:\_Cosas\Programacion\Proyectos\C#\ReneWPF\ReneWPF\bin\Debug\delimon.win32.io.d
 D:\_Cosas\Programacion\Proyectos\C#\ReneWPF\ReneWPF\bin\Debug\Ookii.Dialogs.Wpf.dll
 D:\_Cosas\Programacion\Proyectos\C#\ReneWPF\ReneWPF\bin\Debug\Ookii.Dialogs.Wpf.pdb
 D:\_Cosas\Programacion\Proyectos\C#\ReneWPF\ReneWPF\bin\Debug\Ookii.Dialogs.Wpf.xml
+D:\_Cosas\Programacion\Proyectos\C#\ReneWPF\ReneWPF\bin\Debug\Npgsql.dll
+D:\_Cosas\Programacion\Proyectos\C#\ReneWPF\ReneWPF\bin\Debug\System.ValueTuple.dll
+D:\_Cosas\Programacion\Proyectos\C#\ReneWPF\ReneWPF\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\_Cosas\Programacion\Proyectos\C#\ReneWPF\ReneWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\_Cosas\Programacion\Proyectos\C#\ReneWPF\ReneWPF\bin\Debug\Npgsql.pdb
+D:\_Cosas\Programacion\Proyectos\C#\ReneWPF\ReneWPF\bin\Debug\Npgsql.xml
+D:\_Cosas\Programacion\Proyectos\C#\ReneWPF\ReneWPF\bin\Debug\System.ValueTuple.xml
+D:\_Cosas\Programacion\Proyectos\C#\ReneWPF\ReneWPF\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\_Cosas\Programacion\Proyectos\C#\ReneWPF\ReneWPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
