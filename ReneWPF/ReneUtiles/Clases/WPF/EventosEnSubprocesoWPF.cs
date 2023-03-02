@@ -9,10 +9,17 @@ using ReneUtiles.Clases.Subprocesos;
 
 namespace ReneUtiles.Clases.WPF
 {
-    class EventosEnSubprocesoWPF : EventosEnSubproceso
+    public class EventosEnSubprocesoWPF : EventosEnSubproceso
     {
-        public EventosEnSubprocesoWPF(Action alTerminar, Action<Exception> siDaError) : base(alTerminar, siDaError)
-            {
+        public EventosEnSubprocesoWPF(Action antesDeComenzar, Action alTerminar, Action<Exception> siDaError, Action alConcluirSiempre)
+            :base(antesDeComenzar,alTerminar, siDaError, alConcluirSiempre)
+        {
+            this.antesDeComenzar = () => {
+                if (antesDeComenzar!=null) {
+                    subpVisual(antesDeComenzar);
+                }
+            };
+
             this.alTerminar = () =>
             {
                 subpVisual(alTerminar);
@@ -22,6 +29,30 @@ namespace ReneUtiles.Clases.WPF
             {
                 subpVisual(siDaError, e);
             };
+
+            this.alConcluirSiempre = () => {
+                if (alConcluirSiempre != null)
+                {
+                    subpVisual(alConcluirSiempre);
+                }
+            };
+
+            
+        }
+        public EventosEnSubprocesoWPF(Action alTerminar, Action<Exception> siDaError) : base(alTerminar, siDaError)
+            {
+
+            this.alTerminar = () =>
+            {
+                subpVisual(alTerminar);
+            };
+
+            this.siDaError = (e) =>
+            {
+                subpVisual(siDaError, e);
+            };
+
+
         }
 
         public static void subpVisual(Action metodo)

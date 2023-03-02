@@ -11,29 +11,31 @@ namespace ReneUtiles.Clases.WPF
     {
         public override void ejecutar(EventosEnSubproceso eventos, Action accionSubproseso)
         {
-            accionSubproseso();
-            eventos.alTerminar();
-            //UtilesSubprocesos.subp(
-            //    () =>
-            //    {
-            //        try
-            //        {
-            //            accionSubproseso();
-            //            UtilesWPF.subpVisual(eventos.alTerminar);
+            //accionSubproseso();
+            //eventos.alTerminar();
+            UtilesSubprocesos.subp(
+                () =>
+                {
+                    try
+                    {
+                        eventos.antesDeComenzar?.Invoke();
+                        accionSubproseso();
+                        eventos.alTerminar();
+                        //UtilesWPF.subpVisual(eventos.alTerminar);
 
-            //        }
-            //        catch (Exception ex)
-            //        {
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                        eventos.siDaError(ex);
+                        //UtilesWPF.subpVisual(() => eventos.siDaError(ex));
 
+                    }
+                    eventos.alConcluirSiempre?.Invoke();
 
-            //            UtilesWPF.subpVisual(() => eventos.siDaError(ex));
+                }
 
-            //        }
-
-
-            //    }
-
-            //            );
+                        );
 
 
 
