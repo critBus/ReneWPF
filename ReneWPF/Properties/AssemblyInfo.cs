@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ReneWPF")]
-[assembly: AssemblyDescription("Contact: renearteaga261998@gmail.com")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Rene Lazaro Collado Artega")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("ReneWPF")]
-[assembly: AssemblyCopyright("Copyright © HP Inc. 2022")]
+[assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6de58df7-8771-418d-b07e-20f38083dedd")]
+[assembly: Guid("8c7dbd34-03f3-4300-80aa-24fb3a80f758")]
 
 // Version information for an assembly consists of the following four values:
 //
